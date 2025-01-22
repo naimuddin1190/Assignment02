@@ -6,3 +6,111 @@
     font-weight: 400;
     font-style: normal;
   }
+
+
+  /* shared styles */
+  .display-flex{
+    display: flex;
+  }
+  
+  /* orange color */
+  .text-orange{
+    color: orange;
+  }
+
+  /* sky blue color */
+  .text-skyblue{
+    color: skyblue;
+  }
+  /* Facilities color */
+  .text-facilities{
+    color: #05D4DF;
+  }
+
+/* Admission color */
+.text-admission{
+    color: #5D58EF;
+}
+
+.btn-primary{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+  /* navbar related styles */
+  .navbar{
+    justify-content: space-between;
+    
+  }
+  .navbar{
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .brand{
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+
+.contact-btn{
+    background-color: orange;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+
+}
+  
+
+/* Enroll section styles */
+.enroll-title{
+    font-weight: 800;
+    font-size: 2rem;
+}
+.title-description{
+    font-weight: normal;
+    font-size: 12px;
+}
+
+
+.enroll{
+    align-items: center;
+    gap: 300px;
+}
+
+/* Media responsive related styles */
+@media screen and (max-width:576px){
+    .navbar, .nav-links,.enroll{
+        flex-direction: column;
+    }
+    .enroll-title,.title-description,.btn-primary{
+        display: none;
+    }
+    .enroll{
+        align-items: center;
+        gap: 0px;
+    }
+
+}
