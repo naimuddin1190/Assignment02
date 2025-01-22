@@ -132,7 +132,7 @@ hr{
 /* curriculum section styles */
 
 .curriculum{
-    
+
 }
 .bg-img{
     display: block;
@@ -417,6 +417,7 @@ button {
 .footer-social .social-icons a img:hover {
     transform: scale(1.2); 
 }
+
 
 
 /* Responsive Design */
