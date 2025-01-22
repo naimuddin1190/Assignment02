@@ -42,6 +42,25 @@
     font-size: 1rem;
 }
 
+.linerboxcolor1{
+    background:linear-gradient(#DEF5FF 5%, #FFFFFF  );
+}
+.linerboxcolor2{
+    background: linear-gradient(#FFF4DC 5%, #FFFFFF );
+}
+.linerboxcolor3{
+    background: linear-gradient(#EEE1FF 5%, #FFFFFF);
+}
+
+.readmore-btn1{
+    color:  #64C8FF;
+}
+.readmore-btn2{
+    color: #F0AA00;
+}
+.readmore-btn3{
+    color: #8700FF;
+}
 main{
     max-width: 1200px;
     margin: 0 auto;
@@ -50,12 +69,14 @@ main{
   /* navbar related styles */
   .navbar{
     justify-content: space-between;
+    margin-bottom: 2px solid orange;
     
   }
   .navbar{
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
+    
   }
 
   .brand{
@@ -83,7 +104,15 @@ main{
 
 }
   
-
+.menu{
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+hr{
+    color: orange;
+    display: none;
+}
 /* Enroll section styles */
 .enroll-title{
     font-weight: 800;
@@ -100,17 +129,409 @@ main{
     gap: 300px;
 }
 
+/* curriculum section styles */
+
+.curriculum{
+    
+}
+.bg-img{
+    display: block;
+}
+
+.curriculum-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+.upper-c-title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.c-card{
+    border: 1px solid orange;
+    width: 368px;
+    height: 477px;
+    border-radius: 19px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;  
+
+}
+
+
+/* our stories styles */
+
+/* .s-title{
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.stories-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    grid-template-rows: repeat(3, 200px) 50px 50px;
+    
+}
+.card1{
+    grid-row: span 2;
+} */
+
+/* General Styles */
+.our-stories {
+    padding: 40px;
+    background: linear-gradient(to bottom, #fff, #f9f9f9);
+    font-family: Arial, sans-serif;
+}
+
+.s-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+}
+
+/* Grid Container */
+.stories-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* Large card + 2 smaller card columns */
+    grid-template-rows: repeat(2, auto); /* Adjust rows to fit the content */
+    gap: 20px;
+}
+
+/* Large Card Styling */
+.large-card {
+    grid-column: span 1;
+    grid-row: span 2; /* Takes up 2 rows */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.large-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.large-card .text-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.large-card .story-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.large-card .story-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Small Card Styling */
+.small-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.small-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.small-card .text-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.small-card .story-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #444;
+    margin: 10px 0;
+}
+
+/* Button Styling */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn1 {
+    background: #3CD8E8;
+    color: white;
+}
+#date-badge{
+    padding: 10px 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 1px;
+    margin-top: -100px;
+
+}
+
+.btn2 {
+    background:#95B226;
+    color: white;
+}
+
+.btn3 {
+    background: #5D58F0;
+    color: white;
+}
+
+.btn4 {
+    background: #95B226;
+    color: white;
+}
+
+.btn5 {
+    background: #95B226;
+    color: white;
+}
+.view-all-container {
+    text-align: center; /* Center the button */
+    margin-top: 20px; /* Add spacing between the grid and button */
+}
+
+.view-all-btn {
+    background-color: #000; 
+    color: #fff; 
+    border: none;
+    padding: 12px 24px; 
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px; 
+    width: 150px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.view-all-btn:hover {
+    background-color: #444; 
+}
+
+/* footer styles */
+
+/* Footer Styling */
+.footer {
+    background-color: #00a1ff; /* Blue background */
+    color: #fff; /* White text */
+    padding: 30px 20px;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 30px; 
+    height: 30px;
+    margin-right: 10px;
+
+}
+
+.footer-logo p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #e8f5ff;
+}
+
+.footer-links h4,
+.footer-social h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #ffd700; 
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-social .social-icons a img {
+    width: 35px; 
+    height: 35px;
+    border-radius: 50%; 
+    transition: transform 0.3s;
+}
+
+.footer-social .social-icons a img:hover {
+    transform: scale(1.2); 
+}
+
+
+/* Responsive Design */
+
+
+@media (max-width: 576px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo,
+    .footer-links,
+    .footer-social {
+        margin-bottom: 20px;
+    }
+
+    .footer-logo h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-social .social-icons img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
 /* Media responsive related styles */
 @media screen and (max-width:576px){
-    .navbar, .nav-links,.enroll{
+    .navbar, .nav-links,.enroll, #view-btn{
         flex-direction: column;
-    }
-    .enroll-title,.title-description,.btn-primary{
-        display: none;
     }
     .enroll{
         align-items: center;
         gap: 0px;
     }
 
+    .enroll-title,.title-description,.btn-primary{
+        display:none;
+    }
+    .curriculum-container{
+        grid-template-columns: 1fr;
+
+    }
+    .curriculum-container{
+        justify-items: center;
+    }
+
+    .stories-container {
+        grid-template-columns: repeat(2, 2fr); 
+        grid-template-rows: auto; 
+        gap: 15px; 
+    }
+
+    .large-card {
+        grid-column: span 1; 
+        grid-row: auto; 
+        display: none;
+    }
+
+    .small-card {
+        grid-column: span 1; 
+    }
+
+    .s-title {
+        font-size: 1.8rem; 
+    }
+
+    button {
+        font-size: 0.7rem; 
+        padding: 6px 12px; 
+    }
+
+    .large-card img,
+    .small-card img {
+        height: auto; 
+    }
+
+    .large-card .text-content,
+    .small-card .text-content {
+        padding: 10px; 
+    }
+    .view-all-btn {
+        font-size: 0.9rem; 
+        padding: 10px 20px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start; 
+        text-align: left; 
+    }
+
+    .footer-logo,
+    .footer-links,
+    .footer-social {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .footer-logo h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-social .social-icons img {
+        width: 30px;
+        height: 30px;
+    }
+    .nav-links,.contact-btn{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+       
+    }
+    
 }
