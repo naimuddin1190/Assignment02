@@ -132,10 +132,11 @@ hr{
 /* curriculum section styles */
 
 .curriculum{
+   
 
 }
 .bg-img{
-    display: block;
+    
 }
 
 .curriculum-container{
@@ -182,9 +183,11 @@ hr{
 /* General Styles */
 .our-stories {
     padding: 40px;
-    background: linear-gradient(to bottom, #fff, #f9f9f9);
-    font-family: Arial, sans-serif;
+   
+    
+   
 }
+
 
 .s-title {
     font-size: 2.5rem;
@@ -281,13 +284,13 @@ button {
     color: white;
 }
 #date-badge{
-    padding: 10px 10px;
+    padding: 20px 20px;
     width: 150px;
-    height: 50px;
+    height: 60px;
     font-size: 1rem;
     font-weight: 500;
-    margin-left: 1px;
-    margin-top: -100px;
+    margin-left: -1px;
+    margin-top: -200px;
 
 }
 
@@ -423,39 +426,16 @@ button {
 /* Responsive Design */
 
 
-@media (max-width: 576px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-logo,
-    .footer-links,
-    .footer-social {
-        margin-bottom: 20px;
-    }
-
-    .footer-logo h3 {
-        font-size: 1.5rem;
-    }
-
-    .footer-social .social-icons img {
-        width: 30px;
-        height: 30px;
-    }
-}
-
 
 /* Media responsive related styles */
 @media screen and (max-width:576px){
     .navbar, .nav-links,.enroll, #view-btn{
         flex-direction: column;
     }
-    .enroll{
-        align-items: center;
-        gap: 0px;
-    }
+    .enroll {
+        display: flex; /* Arrange elements horizontally by default */
+        justify-content: space-between; /* Space between image and text */
+      }
 
     .enroll-title,.title-description,.btn-primary{
         display:none;
@@ -534,5 +514,4 @@ button {
         justify-content: space-between;
        
     }
-    
 }
