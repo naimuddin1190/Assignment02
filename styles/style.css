@@ -8,7 +8,7 @@
   }
 
     body {
-        background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255,255,255,0.3)100%);
+        background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255,255,255,0.3) 100%);
         background-repeat: no-repeat;
         margin: 0;
       }
@@ -187,7 +187,6 @@ main{
     font-weight: bold;
 }
 .c-card{
-    border: 0.5px solid orang;
     width: 368px;
     height: 477px;
     border-radius: 19px;
@@ -366,7 +365,7 @@ button {
 #date-badge{
     position: relative;
     padding: 10px 10px;
-    right: 5px;
+    left: 10px;
     top: -30px;
     border-radius: 40px;
     font-size: 0.7rem;
@@ -503,8 +502,6 @@ button {
 
 
 
-/* Responsive Design */
-
 
 
 /* Media responsive related styles */
@@ -520,9 +517,7 @@ button {
         
       }
 
-    .enroll-title,.title-description,.btn-primary{
-        
-    }
+    
     .curriculum-container{
         grid-template-columns: 1fr;
 
@@ -594,10 +589,6 @@ button {
         height: 30px;
     }
     
-
-
-
-
 
     .nav-links, 
     .contact-btn {
