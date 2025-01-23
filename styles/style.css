@@ -7,6 +7,12 @@
     font-style: normal;
   }
 
+    body {
+        background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255,255,255,0.3)100%);
+        background-repeat: no-repeat;
+        margin: 0;
+      }
+  
 
   /* shared styles */
   .display-flex{
@@ -52,13 +58,18 @@
     background: linear-gradient(#F2E8FF 10%, #FFFFFF 40%);
 }
 
-.readmore-btn1{
+.readmore-btn1 a{
+    text-decoration: none;
     color:  #64C8FF;
 }
-.readmore-btn2{
+.readmore-btn2 a{
+    text-decoration: none;
     color: #F0AA00;
+    
 }
-.readmore-btn3{
+
+.readmore-btn3 a{
+    text-decoration: none;
     color: #8700FF;
 }
 main{
@@ -76,7 +87,7 @@ main{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: white;
+    
     
 }
 
@@ -124,7 +135,7 @@ main{
 
 /* Menu Icon Styling */
 .menu {
-    display: none; /* Hidden by default */
+    display: none; 
     font-size: 24px;
     cursor: pointer;
 }
@@ -354,7 +365,7 @@ button {
     right: 5px;
     top: -30px;
     border-radius: 40px;
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 500;
 
 }
