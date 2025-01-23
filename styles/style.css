@@ -151,8 +151,13 @@ main{
 }
 
 /* curriculum section styles */
+.curriculum{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .curriculum{
+
     background-image: url('../assets/bg.png');
 }
 
