@@ -43,13 +43,13 @@
 }
 
 .linerboxcolor1{
-    background:linear-gradient(#DEF5FF 5%, #FFFFFF  );
+    background:linear-gradient(#DEF5FF 5%, #EEFAFF 19%, #FFFFFF 40%  );
 }
 .linerboxcolor2{
-    background: linear-gradient(#FFF4DC 5%, #FFFFFF );
+    background: linear-gradient(#FFF4DC 0%, #FFFFFF 40% );
 }
 .linerboxcolor3{
-    background: linear-gradient(#EEE1FF 5%, #FFFFFF);
+    background: linear-gradient(#F2E8FF 10%, #FFFFFF 40%);
 }
 
 .readmore-btn1{
@@ -67,48 +67,68 @@ main{
 }
 
   /* navbar related styles */
-  .navbar{
-    justify-content: space-between;
-    margin-bottom: 2px solid orange;
-    
-  }
-  .navbar{
+  nav{
     max-width: 1200px;
     margin: 0 auto;
-    align-items: center;
-    
   }
-
-  .brand{
+  .navbar {
     display: flex;
-    text-align: center;
+    justify-content: space-between;
     align-items: center;
-  }
-.nav-item{
-    list-style: none;
-    margin-right: 30px;
-}
-.nav-link{
-    text-decoration: none;
-    font-weight: 500;
+    padding: 10px 20px;
+    background-color: white;
     
 }
 
-.contact-btn{
-    background-color: orange;
-    width: 100px;
-    height: 30px;
-    border: none;
-    border-radius: 8px;
-    color: white;
+.brand {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
 
+.brand img {
+    width: 40px;
+    margin-right: 10px;
 }
-  
-.menu{
-    width: 50px;
-    height: 50px;
-    display: none;
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.contact-btn:hover{
+    background-color: #05D4DF;
+}
+
+/* Menu Icon Styling */
+.menu {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    cursor: pointer;
+}
+
 
 
 /* Enroll section styles */
@@ -126,15 +146,14 @@ main{
     align-items: center;
     gap: 300px;
 }
+.btn-primary:hover{
+    background-color: #05D4DF;
+}
 
 /* curriculum section styles */
 
 .curriculum{
-   
-
-}
-.bg-img{
-    
+    background-image: url('../assets/bg.png');
 }
 
 .curriculum-container{
@@ -148,16 +167,59 @@ main{
     font-weight: bold;
 }
 .c-card{
-    border: 1px solid orange;
+    border: 0.5px solid orang;
     width: 368px;
     height: 477px;
     border-radius: 19px;
     text-align: center;
     align-items: center;
     justify-content: center;  
+    box-shadow: 0px 0px 1px ;
+   
+    
 
 }
 
+/* arrow buutons styles */
+.arrow-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px; 
+}
+
+.arrow-button {
+    background-color: orange; 
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.arrow-button i {
+    color: white; 
+    font-size: 18px;
+}
+
+.arrow-button:hover {
+    background-color: darkorange; 
+    transform: scale(1.1); 
+}
+
+.left-arrow {
+    transform: rotate(0deg); 
+}
+
+.right-arrow {
+    transform: rotate(0deg); 
+}
 
 /* our stories styles */
 
@@ -179,12 +241,12 @@ main{
 } */
 
 /* General Styles */
-.our-stories {
-    padding: 40px;
+  
+  .our-stories {
+    background-image: url('../assets/bg.png');
    
-    
-   
-}
+  }
+  
 
 
 .s-title {
@@ -195,18 +257,18 @@ main{
     color: #333;
 }
 
-/* Grid Container */
+/* stories Grid Container */
 .stories-container {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr; /* Large card + 2 smaller card columns */
-    grid-template-rows: repeat(2, auto); /* Adjust rows to fit the content */
+    grid-template-columns: 2fr 1fr 1fr; 
+    grid-template-rows: repeat(2, auto); 
     gap: 20px;
 }
 
 /* Large Card Styling */
 .large-card {
     grid-column: span 1;
-    grid-row: span 2; /* Takes up 2 rows */
+    grid-row: span 2; 
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -287,7 +349,7 @@ button {
     right: 5px;
     top: -30px;
     border-radius: 40px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
 
 }
@@ -312,8 +374,8 @@ button {
     color: white;
 }
 .view-all-container {
-    text-align: center; /* Center the button */
-    margin-top: 20px; /* Add spacing between the grid and button */
+    text-align: center; 
+    margin-top: 20px;
 }
 
 .view-all-btn {
@@ -330,18 +392,18 @@ button {
 }
 
 .view-all-btn:hover {
-    background-color: #444; 
+    background-color:#05D4DF; 
 }
 
 /* footer styles */
 
 /* Footer Styling */
 .footer {
-    background-color: #00a1ff; /* Blue background */
-    color: #fff; /* White text */
+    background-color: #00a1ff; 
+    color: #fff; 
     padding: 30px 20px;
     text-align: left;
-    font-family: 'Arial', sans-serif;
+    
 }
 
 .footer-container {
@@ -427,9 +489,9 @@ button {
 
 /* Media responsive related styles */
 @media screen and (max-width:576px){
-    .navbar, .nav-links,.enroll, #view-btn{
+    /* .navbar, .nav-links,.enroll, #view-btn{
         flex-direction: column;
-    }
+    } */
     .enroll {
         flex-direction: column-reverse; 
         justify-content: space-between;
@@ -447,6 +509,9 @@ button {
     }
     .curriculum-container{
         justify-items: center;
+    }
+    .arrow-buttons{
+        display: none;
     }
 
     .stories-container {
@@ -508,11 +573,32 @@ button {
         width: 30px;
         height: 30px;
     }
-    .nav-links,.contact-btn{
+    
+
+
+
+
+
+    .nav-links, 
+    .contact-btn {
+        display: none; 
+    }
+
+    .menu {
+        display: block; 
+    }
+
+    .brand {
+        margin-left: 10px; 
+    }
+
+    .navbar {
+        border-bottom: 1px solid orange;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    .brand-text{
         display: none;
     }
-    .navbar{
-        justify-content: space-between;
-       
-    }
+
 }
